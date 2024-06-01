@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metode Numerik | Kelompok 2 | F-22</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnH2N2QEY5Ra2s8Lr7K8oJ8k96pSbqJH6Jf2t5w5Kd1N4eRJJ4qgH0YGZmOF6L5M/vZrGnRvg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="logo">
+          <h1>Kelompok 2</h1>
+        </div>
+        <div class="list">
+          <ul>
+            <h2>Metode Numerik</h2>
+            <li>
+              <a href="index.html"
+                ><i class="fas fa-calculator"></i> Interpolasi Lagrange</a
+              >
+            </li>
+            <li>
+              <a href="newton.html"
+                ><i class="fas fa-superscript"></i> Interpolasi Newton</a
+              >
+            </li>
+            <li>
+              <a href="makalah.html"
+                ><i class="fas fa-file-alt"></i> Link Makalah</a
+              >
+            </li>
+            <li>
+              <a href="anggota.html"><i class="fas fa-users"></i> Anggota</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu">
+          <div class="bar bar1"></div>
+          <div class="bar bar2"></div>
+          <div class="bar bar3"></div>
+        </div>
+      </div>
+    </nav>
+    <div class="lagrange">
+      <div class="container">
+        <h1>
+          <i class="fas fa-calculator icon-gap"></i>Kalkulator Interpolasi
+          Newton
+        </h1>
+        <div class="box">
+          <div class="row">
+            <label for="xo"></label>
+            <input type="number" placeholder="x0" id="xo" step="any" /><br />
+            <label for="yo"></label>
+            <input type="number" id="yo" placeholder="y0" step="any" /><br />
+          </div>
+          <div class="row">
+            <label for="x1"></label>
+            <input type="number" placeholder="x1" id="x1" step="any" /><br />
+            <label for="y1"></label>
+            <input type="number" placeholder="y1" id="y1" step="any" /><br />
+          </div>
+          <div class="row">
+            <label for="x2"></label>
+            <input type="number" placeholder="x2" id="x2" step="any" /><br />
+            <label for="y2"></label>
+            <input type="number" placeholder="y2" id="y2" step="any" /><br />
+          </div>
+          <div class="row">
+            <label for="x"></label>
+            <input type="number" placeholder="x" id="x" step="any" /><br />
+          </div>
+        </div>
+
+        <div class="btn">
+          <button id="hitung-button">
+            <i class="fa fa-calculator icon-gap"></i>Hitung Newton
+          </button>
+          <button onclick="resetForm()">
+            <i class="fas fa-redo icon-gap"></i>Reset
+          </button>
+        </div>
+        <p id="hasil"></p>
+        <div id="langkah"></div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/a669edfdff.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script1.js"></script>
+  </body>
+</html>
