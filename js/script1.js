@@ -50,11 +50,13 @@ function calculateNewton() {
   }) * ${f1} + (${target_x} - ${nilai_x[0]}) * (${target_x} - ${
     nilai_x[1]
   }) * ${f2}</p>
-    <p>Nilai Interpolasi ≈ ${
-      f0 +
-      (target_x - nilai_x[0]) * f1 +
-      (target_x - nilai_x[0]) * (target_x - nilai_x[1]) * f2
-    }</p>
+    <p>Nilai Interpolasi ≈ ${parseFloat(
+      (
+        f0 +
+        (target_x - nilai_x[0]) * f1 +
+        (target_x - nilai_x[0]) * (target_x - nilai_x[1]) * f2
+      ).toFixed(7)
+    )}</p>
   `;
 
   // Hitung nilai yang diinterpolasi
@@ -67,8 +69,8 @@ function calculateNewton() {
   document.getElementById("hasil").innerText =
     "Interpolasi f(" +
     target_x +
-    ") menggunakan interpolasi Newton orde 2: " +
-    nilai_interpolasi.toFixed(7);
+    ") menggunakan interpolasi Newton orde 2 = " +
+    parseFloat(nilai_interpolasi.toFixed(7));
   // Tampilkan langkah-langkah pengerjaan
   document.getElementById("langkah").innerHTML = langkah_pengerjaan;
 }

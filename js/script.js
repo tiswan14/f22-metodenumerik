@@ -32,33 +32,23 @@ function calculateP2() {
 
   // Menghitung L0
   let L0 = ((x - x1) * (x - x2)) / ((xo - x1) * (xo - x2));
-  steps.innerHTML += `<li>Menghitung L<sub>0</sub> = (${x} - ${x1})(${x} - ${x2}) / (${xo} - ${x1})(${xo} - ${x2}) = ${L0.toFixed(
-    8
-  )}</li>`;
+  steps.innerHTML += `<li>Menghitung L<sub>0</sub> = (${x} - ${x1})(${x} - ${x2}) / (${xo} - ${x1})(${xo} - ${x2}) = ${L0}</li>`;
 
   // Menghitung L1
   let L1 = ((x - xo) * (x - x2)) / ((x1 - xo) * (x1 - x2));
-  steps.innerHTML += `<li>Menghitung L<sub>1</sub> = (${x} - ${xo})(${x} - ${x2}) / (${x1} - ${xo})(${x1} - ${x2}) = ${L1.toFixed(
-    8
-  )}</li>`;
+  steps.innerHTML += `<li>Menghitung L<sub>1</sub> = (${x} - ${xo})(${x} - ${x2}) / (${x1} - ${xo})(${x1} - ${x2}) = ${L1}</li>`;
 
   // Menghitung L2
   let L2 = ((x - xo) * (x - x1)) / ((x2 - xo) * (x2 - x1));
-  steps.innerHTML += `<li>Menghitung L<sub>2</sub> = (${x} - ${xo})(${x} - ${x1}) / (${x2} - ${xo})(${x2} - ${x1}) = ${L2.toFixed(
-    8
-  )}</li>`;
+  steps.innerHTML += `<li>Menghitung L<sub>2</sub> = (${x} - ${xo})(${x} - ${x1}) / (${x2} - ${xo})(${x2} - ${x1}) = ${L2}</li>`;
 
   // Menghitung P2(x)
   let P2 = yo * L0 + y1 * L1 + y2 * L2;
-  // Memformat hasil dengan 8 digit di belakang koma
-  let hasilTerformat = P2.toFixed(8);
+  // Memformat hasil tanpa trailing zeros
+  let hasilTerformat = parseFloat(P2.toFixed(8));
 
   // Menambahkan langkah hasil akhir
-  steps.innerHTML += `<li>Menghitung P<sub>2</sub>(x) = ${yo} * ${L0.toFixed(
-    8
-  )} + ${y1} * ${L1.toFixed(8)} + ${y2} * ${L2.toFixed(
-    8
-  )} = ${hasilTerformat}</li>`;
+  steps.innerHTML += `<li>Menghitung P<sub>2</sub>(x) = ${yo} * ${L0} + ${y1} * ${L1} + ${y2} * ${L2} = ${hasilTerformat}</li>`;
 
   // Menampilkan hasil
   document.getElementById("hasil").innerText =
