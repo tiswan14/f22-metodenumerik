@@ -135,12 +135,13 @@ nav .menu .bar {
 }
 
 input {
-  width: 8rem;
-  padding: 10px 0px;
+  width: 9rem;
+  padding: 8px 0px;
   text-align: center;
-  border-radius: 0.3rem;
+  border-radius: 0.4rem;
   outline: none;
   border: 1px solid #e5e7eb;
+  font-size: 16px;
 }
 input:focus {
   border: 1px solid #5045e5;
@@ -153,12 +154,13 @@ button {
   background: #3390f3;
   border: none;
   color: #ffffff;
-  padding: 10px 0px;
+  padding: 11px 0cm;
   border-radius: 0.3rem;
   font-weight: 500;
   cursor: pointer;
   transition: all ease 0.3;
-  width: 8rem;
+  width: 9rem;
+  font-size: 15px;
 }
 button:hover {
   background: #5ea5f1;
@@ -244,4 +246,15 @@ i {
   justify-content: center;
   align-items: center;
   height: 85vh;
+}
+
+footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-color);
+  height: 7vh;
+  margin-top: 4px;
+  color: #ffffff;
+  font-size: 15px;
 }
