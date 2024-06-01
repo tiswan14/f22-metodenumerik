@@ -241,6 +241,9 @@ i {
   border-radius: 1rem;
 }
 
+.dosen {
+  margin-bottom: 4rem;
+}
 .makalah .container {
   display: flex;
   justify-content: center;
