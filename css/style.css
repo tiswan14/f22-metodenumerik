@@ -248,6 +248,13 @@ i {
   height: 85vh;
 }
 
+footer {
+  /* position: fixed; */
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
 footer .container {
   display: flex;
   justify-content: center;
