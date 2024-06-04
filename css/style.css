@@ -251,6 +251,10 @@ i {
   height: 85vh;
 }
 
+.makalah .container .link-doc a {
+  color: white;
+}
+
 footer {
   width: 100%;
   position: fixed;

@@ -55,7 +55,7 @@ function calculateNewton() {
         f0 +
         (target_x - nilai_x[0]) * f1 +
         (target_x - nilai_x[0]) * (target_x - nilai_x[1]) * f2
-      ).toFixed(7)
+      ).toFixed(15)
     )}</p>
   `;
 
@@ -70,7 +70,7 @@ function calculateNewton() {
     "Interpolasi f(" +
     target_x +
     ") menggunakan interpolasi Newton orde 2 = " +
-    parseFloat(nilai_interpolasi.toFixed(7));
+    parseFloat(nilai_interpolasi.toFixed(15));
   // Tampilkan langkah-langkah pengerjaan
   document.getElementById("langkah").innerHTML = langkah_pengerjaan;
 }
